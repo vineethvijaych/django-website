@@ -1,0 +1,91 @@
+
+.topbar{
+    background-color: rgb(51, 51, 51);
+}
+.topbartxt{
+    color:   rgb(204, 204, 204);
+}
+a.nav-link{
+    color: black;
+    font-size: 20px;
+    
+}
+
+a.nav-link:hover{
+    color: rgb(0, 201, 27);
+    
+}
+
+.hd1{
+    color: rgb(0, 201, 27);
+}
+
+.nv1{
+    margin-left: 150px;
+}
+.cerousel{
+    padding-top: 500px;
+}
+.checked {
+    color: orange;
+  }
+
+
+.footer{
+    background-color: rgb(23, 48, 65);
+}
+.zayshop{
+    color: rgb(0, 201, 27);
+}
+.whitetxt{
+    color: white;
+}
+.icon{
+    width: 15px;
+}
+.brdr{
+    border-width: 1px;
+    border-color: rgb(122, 167, 197);
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+p.txt1:hover{
+    color:rgb(0, 201, 27);
+}
+.brdr1{
+    border-width: 1px;
+    border-color: rgb(122, 167, 197);
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.ftclr{
+    background-color:rgb(13, 31, 43) ;
+}
+.footer-list a{
+    text-decoration: none;
+}
+.image{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.c-img img{
+    width: 500px;
+}
+.ceroclr{
+    background-color: rgb(240, 240, 240);
+}
+.txt{
+    padding-top: 170px;
+}
+
+.featured{
+    background-color: rgba(218, 239, 250, 0.37);
+}
+.btn{
+    color: rgb(255, 255, 255);
+}

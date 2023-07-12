@@ -1,0 +1,134 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    {% block css %}
+    <link rel="stylesheet" href="">
+
+    {% endblock %}
+
+     {% block title %}
+    <title>base</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container-fluid topbar ">
+        <div class="container pt-2">
+          <div class="row">
+            <div class="col-lg-2">
+              <p class="topbartxt"><img src="/e-commerce site/icons/icons8-email-24.png" alt="">  info@company.com</p>
+            </div>
+            <div class="col-lg-2">
+              <p class="topbartxt "><img src="/e-commerce site/icons/icons8-phone-26.png" alt="">  1234567890</p>
+            </div>
+            <div class="col-lg-8">
+            <p class="topbartxt  text-end">
+              <img  src="/e-commerce site/icons/icons8-facebook-f-24 (2).png" alt="">
+              <img src="/e-commerce site/icons/icons8-instagram-24 (1).png" alt="">
+              <img src="/e-commerce site/icons/icons8-twitter-30.png" alt="">
+              <img src="/e-commerce site/icons/icons8-linkedin-30.png" alt="">
+            </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- second top bar-->
+
+    <div class="container mt-3">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1 class="hd1">Zay</h1></a>
+          
+          <div class="collapse navbar-collapse justify-content-center nv1" id="navbarNav">
+            
+          
+             
+                <a class="nav-link  me-5" href="#">Home</a>
+              
+                <a class="nav-link ms-5 me-5" href="#">About</a>
+              
+                <a class="nav-link ms-5 me-5" href="#">Shop</a>
+              
+                <a class="nav-link ms-5 " href="#">Contact</a>
+          </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <img src="/e-commerce site/icons/icons8-search-30.png" alt="">
+                  <img src="/e-commerce site/icons/icons8-cart-30.png" alt="">
+                  <img src="/e-commerce site/icons/icons8-user-30.png" alt="">
+                </div> 
+        </div>
+      </nav>
+    </div>
+
+    
+     {% block content %}
+
+     {% endblock %}
+     
+     <div class="container-fluid footer ">
+        <div class="row ">
+            <div class="col-lg mt-4 ">
+                <div class="container ">
+                    <div class="row brdr1 ">
+                        <div class="col-lg col-md"><h3 class="zayshop brdr pb-2">Zay shop</h2>
+                            
+                            <p class="whitetxt mt-3"><img class="icon" src="/e-commerce site/icons/icons8-location-24 (2).png" alt=""> 123 asfbjksdbb 42659</p>
+                            <p class="whitetxt"><img class="icon" src="/e-commerce site/icons/icons8-phone-26.png" alt=""> 9526654235</p>
+                            <p class="whitetxt"><img class="icon" src="/e-commerce site/icons/icons8-email-24.png" alt=""> info@gmail.com</p>
+                            
+                        </div>
+                        <div class="col-lg col-md footer-list">
+                          <h3 class="whitetxt brdr pb-2">products</h3>
+                            <a href="#"><p class="whitetxt txt1 mt-3">Luxury</p></a>
+                            <p class="whitetxt txt1">Sport wear</p>
+                            <p class="whitetxt txt1">Men's Shoes</p>
+                            <p class="whitetxt txt1">Women's shoes</p>
+                            <p class="whitetxt txt1">popular dress</p>
+                            <p class="whitetxt txt1">Gym Accessories</p>
+                            <p class="whitetxt txt1 pb-2">Sport shoes</p>
+                        </div>
+                        <div class="col-lg col-md footer-list"><h3 class="whitetxt brdr pb-2">further info</h3>
+                            <a href="#"><p class="whitetxt txt1 mt-3">Home</p></a>
+                            <p class="whitetxt txt1">About Us</p>
+                            <p class="whitetxt txt1">Shop location</p>
+                            <p class="whitetxt txt1">FAQs</p>
+                            <p class="whitetxt txt1">Contact</p>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg mt-3 mb-3"><nav class="navbar navbar-light ">
+                            <div class="container-fluid">
+                              <a class="navbar-brand"><img src="/e-commerce site/icons/icons8-facebook-f-24 (2).png" alt="">
+                                <img src="/e-commerce site/icons/icons8-instagram-24 (1).png" alt="">
+                                <img src="/e-commerce site/icons/icons8-twitter-30.png" alt="">
+                                <img src="/e-commerce site/icons/icons8-linkedin-30.png" alt=""></a>
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ftclr">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg mt-2"><p class="whitetxt"> copyright @ 2021 company name| desighned by vineeth</p></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
