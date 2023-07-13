@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+
 <div class="container-fluid ceroclr">
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -19,12 +20,13 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
+        
         <div class="carousel-item active" data-bs-interval="10000">
           <div class="container ">
               <div class="row py-5">
                
                 <div class="col-lg-6 c-img order-lg-last">
-                  <img class="img-fluid" src="" alt="">
+                  <img class="img-fluid" src="{% static 'images/banner_img_01.jpg' %}" alt="">
                 </div>
                 
   
@@ -39,12 +41,13 @@
               </div>
             </div>
         </div>
+        
         <div class="carousel-item" data-bs-interval="2000">
           <div class="container ">
             <div class="row py-5">
              
               <div class="col-lg-6 c-img order-lg-last">
-                <img class="img-fluid" src="/e-commerce site/images/banner_img_02.jpg" alt="">
+                <img class="img-fluid" src="{% static 'images/banner_img_02.jpg' %}" alt="">
               </div>
               
 
@@ -64,7 +67,7 @@
             <div class="row py-5">
              
               <div class="col-lg-6 c-img order-lg-last">
-                <img class="img-fluid" src="/e-commerce site/images/banner_img_03.jpg" alt="">
+                <img class="img-fluid" src="{% static 'images/banner_img_03.jpg' %}" alt="">
               </div>
               
 
@@ -102,21 +105,16 @@
                 <div class="row mt-5">
                     <div class="col-lg">
                         <div class="row">
+
+                          {% for i in field1 %}
                             <div class="col-lg col-md me-5">
-                                <img class="image" src="/e-commerce site/images/category_img_01.jpg" alt="">
-                                <h4 class="text-center mt-3">watches</h4>
+                                <img class="image" src="{{i.img.url}}" alt="">
+                                <h4 class="text-center mt-3">{{i.image_name}}</h4>
                                 <p class="text-center mt-2"><button type="button" class="btn btn-success ">go shop</button></p>
                             </div>
-                            <div class="col-lg col-md me-5">
-                                <img class="image" src="/e-commerce site/images/category_img_02.jpg" alt="">
-                                <h4 class="text-center mt-3">shoes</h4>
-                                <p class="text-center mt-2"><button type="button" class="btn btn-success ">go shop</button></p>
-                            </div>
-                            <div class="col-lg col-md">
-                                <img class="image" src="/e-commerce site/images/category_img_03.jpg" alt="">
-                                <h4 class="text-center mt-3">accessories</h4>
-                                <p class="text-center mt-2"><button type="button" class="btn btn-success ">go shop</button></p>
-                            </div>
+                            {% endfor %}
+
+                           
                         </div>
                     </div>
 
@@ -135,8 +133,9 @@
             <div class="col-lg mb-5">
           
           <div class="card-group mt-2">
+            {% for j in field %}
               <div class="card me-3">
-                <img src="/e-commerce site/images/feature_prod_01.jpg" class="card-img-top" alt="...">
+                <img src="{{j.img.url}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
@@ -146,37 +145,13 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
       
-                  <h4 class="card-title">Gym Weight</h4>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="card-title">{{j.image_name}}</h4>
+                  <p class="card-text">{{j.image_description}}</p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
-              <div class="card me-3">
-                <img src="/e-commerce site/images/feature_prod_02.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <h4 class="card-title">Cloud Nike Shoes</h4>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="/e-commerce site/images/feature_prod_03.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <h4 class="card-title">Summer Addides shoes</h4>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+              {% endfor %}
+              
             </div>
           </div>
         </div>
